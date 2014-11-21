@@ -56,8 +56,8 @@ var dl = ytdl(program.args[0])
     info = i;
     format = f;
     console.log(format);
-    var video_path = info.title + ' - ' + info.video_id + '.' + format.container;
-    var audio_path = info.title + ' - ' + info.video_id + '.mp3';
+    var video_path = info.title.replace(/[\[\/\]]/g, '').replace(/\s{2,}/, ' ') + ' - ' + info.video_id + '.' + format.container;
+    var audio_path = info.title.replace(/[\[\/\]]/g, '').replace(/\s{2,}/, ' ') + ' - ' + info.video_id + '.mp3';
     console.log('downloading to ' + video_path);
     dl_bar = new ProgressBar(':bar', {
       complete: '=',
