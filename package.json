@@ -1,0 +1,14 @@
+{
+  "name": "ytunes",
+  "version": "0.0.0",
+  "description": "download and convert YouTube videos to mp3",
+  "bin": "./ytunes.sh",
+  "author": "Carlos Rodriguez <carlos@s8f.org> (http://s8f.org/)",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.5.0",
+    "ffmpeg-bin": "0.0.1",
+    "progress": "^1.1.8",
+    "ytdl-core": "git://github.com/carlos8f/node-ytdl-core"
+  }
+}
